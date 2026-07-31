@@ -4,7 +4,7 @@
 # https://github.com/spf13/pflag
 %global goipath		github.com/spf13/pflag
 %global forgeurl	https://github.com/spf13/pflag
-Version:		1.0.5
+Version:		1.0.10
 
 %gometa
 
@@ -51,7 +51,7 @@ building other packages which use import path with
 #-----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n pflag-%{version}
+%autosetup -p1 -n pflag-1.0.10
 
 # workaround flag_test.go test with golang-1.18
 sed -e 's/fmt.Println/fmt.Print/' -i flag_test.go
